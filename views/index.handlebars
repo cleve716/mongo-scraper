@@ -1,0 +1,33 @@
+<div class = "container" >
+<div class="jumbotron" id = "main">
+     <h1>"And the scales shall be scraped from your eyes!"</h1>
+       <h3>Mother Jones Magazine </h3>
+       <a href="/scrape"> <button type="button" class="btn btn-success scrape" > Grab Articles </button></a>
+</div>
+<div class="article-container">
+
+    {{#each Article}}
+  <div class="row">
+
+<div class="panel">
+  <div class="panel-heading">{{this.title}}
+    <a href="/notes/{{this._id}}">
+    <button type="button" class="btn btn-success save-article" >See Comments</button> </a>
+  </div>
+  <div class="panel-body">
+    <a href= "{{this.link}}" target="_blank"> {{this.link}}</a>
+  </div>
+</div>
+    </div>
+ {{/each}}
+</div>
+
+
+<!-- Footer -->
+<footer class="footer container">
+<a href="/">Home</a>
+</footer>
+
+</div>
+<script>
+</script>
