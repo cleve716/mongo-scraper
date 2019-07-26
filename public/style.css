@@ -1,0 +1,35 @@
+body {
+  background: url('./img/MJ.png') center;
+
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  color: white;
+  background: rgba(105, 109, 105, 0.918);
+  text-align: center;
+}
+#notes{
+  background: rgba(1, 12, 1, 0.918);
+}
+
+.well {
+  background: rgba(255, 255, 255, 0.904);
+
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+h1 {
+  font-family: 'Special Elite', cursive;
+}
+
+#main{
+  padding: 40px;
+  margin: 40px;
+}
+.panel-heading{
+  background: rgba(255, 255, 255, 0.904);
+}
