@@ -27,7 +27,8 @@ app.set("view engine", "handlebars");
 
 
 // connect to MongoDB
-mongoose.connect("mongodb://localhost/mjscrape", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mjscrape" ;
+mongoose.connect(MONGODB_URI);
 
 //=========Routes==========//
 //GET all articles
